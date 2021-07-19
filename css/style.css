@@ -13,13 +13,18 @@ html, body {
 }
 
 img{
-  width: 40%;
+  width: 100%;
   display: block;
 }
 
 .wrapper {
-  background: url(../img/header.jpg) no-repeat center center / cover;
-  height: 430px;
+  background-image: url(../img/mobile.jpg);
+  height: 100vh;
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
 }
 
 nav {
@@ -42,7 +47,7 @@ nav button {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  height: 100%;
+  height: 60%;
   text-align: center;
   padding: 0 40px;
 }
@@ -75,8 +80,7 @@ nav button {
 }
 
 .showcase__btn  button{
-  width: 75%;
-  padding: 10px 0;
+  padding: 10px 10px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -88,4 +92,59 @@ nav button {
   opacity: 0.6;
   font-size: .65rem;
   margin-top: 1rem;
+}
+
+/* Showcase Sub */
+.sub-showcase{
+  background: linear-gradient(
+  318.68deg, #0F495C 0%, #0D3640 49.72%, #08141F 100%);
+  z-index: 1;
+  flex: 1;
+  text-align: center;
+  padding: 20px 15px;
+}
+
+.sub-showcase__title {
+  color: #00ED82;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.sub-showcase__logos {
+  width: 70%;
+  display: block;
+  margin-bottom: 1em;
+  margin: 0 auto;
+}
+
+.sub-showcase span {
+  
+}
+
+.sub-showcase__details {
+  margin: 1em 0;
+}
+
+.sub-showcase__detail-primary {
+  font-size: 12px;
+}
+
+.sub-showcase a {
+  color: #fff;
+  opacity: 0.6;
+  font-size: 12px;
+}
+
+.sub-showcase__btn {
+  display: block;
+  margin: 0 auto;
+  background: none;
+  padding: 12px 24px;
+  color: #fff;
+  text-transform: uppercase;
+  border: 2px solid #fff;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
 }

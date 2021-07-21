@@ -40,6 +40,7 @@ nav button {
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: .5px;
+  cursor: pointer;
 }
 
 .showcase {
@@ -94,7 +95,7 @@ nav button {
   margin-top: 1rem;
 }
 
-/* Showcase Sub */
+/* Sub Showcase*/
 .sub-showcase{
   background: linear-gradient(
   318.68deg, #0F495C 0%, #0D3640 49.72%, #08141F 100%);
@@ -153,7 +154,7 @@ nav button {
   background-color: #000;
 }
 
-.library__heading {
+.library__heading-container {
   padding: 25px 15px;
 }
 
@@ -179,4 +180,50 @@ nav button {
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
+}
+
+.library__gallery {
+  padding: 20px 15px 60px 15px;
+  background: black;
+}
+.library__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.3em;
+}
+.grid__item {
+  position: relative;
+}
+.library__item-gradient {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: linear-gradient(156.82deg, 
+  rgba(0,0,0,0.6) 4.58%, rgba(0,0,0,0) 69.61%),
+  linear-gradient(24.5deg, rgba(0,0,0,0.2) 4.71%, 
+  rgba(0,0,0,0) 71.49%);;
+}
+
+.library__gallery .gallery__1 {
+  border: none;
+  cursor: pointer;
+}
+.library__item-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  padding: 10px;
+}
+.library__item-title span {
+  display: block;
+  font-weight: 300;
+  font-size: 12px;
+}
+.library__item-title div {
+  margin-top: .055em;
+  font-weight: 700;
+  font-size: 14px;
 }
